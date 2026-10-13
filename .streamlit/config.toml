@@ -1,0 +1,16 @@
+[theme]
+base = "dark"
+primaryColor = "#5B8DEF"
+backgroundColor = "#0B0E14"
+secondaryBackgroundColor = "#11161F"
+textColor = "#E6EAF2"
+linkColor = "#7AA5F5"
+borderColor = "#1E2633"
+baseRadius = "10px"
+font = "sans-serif"
+chartCategoricalColors = [
+  "#5B8DEF", "#2ECC8F", "#E8B44C", "#B48EF5", "#F0616D", "#4DC4D9",
+]
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,9 @@
+# Example schedule (UTC). Replace <REPO_DIR> with the checkout path. PAPER trading only.
+30 22 * * 1-4  <REPO_DIR>/deploy/daily-pipeline.sh
+0  22 * * 5    <REPO_DIR>/deploy/daily-pipeline.sh --with-sec
+0  14 * * 0    <REPO_DIR>/deploy/daily-pipeline.sh --with-nlp
+30 23 * * 5    <REPO_DIR>/deploy/weekly-rebalance.sh
+30 23 * * 1-4  <REPO_DIR>/deploy/daily-rebalance.sh
+15 * * * *     <REPO_DIR>/deploy/news-collector.sh
+5,35 * * * *   <REPO_DIR>/deploy/reddit-collector.sh
+10 */4 * * *   <REPO_DIR>/deploy/sentiment-scorer.sh

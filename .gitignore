@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.uv/
+.pytest_cache/
+data/*
+!data/README.md
+outputs/*
+!outputs/README.md
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.log
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
